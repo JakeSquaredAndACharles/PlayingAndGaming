@@ -36,8 +36,13 @@
     var score = 0;
     var scoreText;
 
+
     function preload ()
     {
+        this.game.scale.pageAlignHorizontally = true;
+        this.game.scale.pageAlignVertically = true;
+        this.game.scale.refresh();
+        
         this.load.image('sky', 'assets/sky.png');
         this.load.image('ground', 'assets/platform.png');
         this.load.image('prism', 'assets/star.png');
@@ -48,9 +53,6 @@
 
     function create ()
     {
-        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-        game.scale.pageAlignHorizontally = true;
-        game.scale.pageAlignVertically = true;
 
         this.add.image(400, 300, 'sky');
         
