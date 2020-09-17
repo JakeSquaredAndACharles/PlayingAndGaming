@@ -43,7 +43,7 @@
         this.load.image('ground', 'assets/grassMid.png');
         this.load.image('platform', 'assets/grassHalf.png');
         this.load.image('prism', 'assets/star.png');
-        this.load.image('bomb', 'assets/bomb.png');
+        this.load.image('bomb', 'assets/bomb.png').sprite.setScale(.5);
         this.load.spritesheet('dude', 'assets/dude.png', {frameWidth: 32, frameHeight: 48 });
         cursors = this.input.keyboard.createCursorKeys();
     }
