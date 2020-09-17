@@ -111,6 +111,10 @@
 
     function update ()
     {
+        game.scale.pageAlignHorizontally = true;
+        game.scale.pageAlignVertically = true;
+        game.scale.refresh();  
+        
         if (cursors.left.isDown)
         {
             player.setVelocityX(-230);
@@ -133,10 +137,7 @@
         if (cursors.up.isDown && player.body.touching.down)
         {
             player.setVelocityY(-425);
-        }
-        game.scale.pageAlignHorizontally = true;
-        game.scale.pageAlignVertically = true;
-        game.scale.refresh();   
+        } 
     }
 
     function collectPrism (player, prism)
