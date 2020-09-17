@@ -40,7 +40,7 @@
     function preload ()
     {
         this.load.image('background', 'assets/colored_grass.png');
-        this.load.image('ground', 'assets/grass.png');
+        this.load.image('ground', 'assets/grassMid.png');
         this.load.image('prism', 'assets/star.png');
         this.load.image('bomb', 'assets/bomb.png');
         this.load.spritesheet('dude', 'assets/dude.png', {frameWidth: 32, frameHeight: 48 });
@@ -55,10 +55,10 @@
 
         //Buttom Layer
         platforms.create(50, 600, 'ground');
-        platforms.create(150, 600, 'ground');
         platforms.create(200, 600, 'ground');
-        platforms.create(250, 600, 'ground');
-        platforms.create(300, 600, 'ground');
+        platforms.create(350, 600, 'ground');
+        platforms.create(500, 600, 'ground');
+        platforms.create(650, 600, 'ground');
 
         platforms.create(610, 400, 'ground');
         platforms.create(50, 250, 'ground');
