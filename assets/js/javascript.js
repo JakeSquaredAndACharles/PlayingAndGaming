@@ -29,3 +29,9 @@ var showPlaylist = function (id) {
     }
 
 };
+
+document.getElementById('chilltendo').addEventListener('click', showPlaylist());
+document.getElementById('synthwave').addEventListener('click', showPlaylist());
+document.getElementById('superLofi').addEventListener('click', showPlaylist());
+document.getElementById('pokeChill').addEventListener('click', showPlaylist());
+document.getElementById('undertale').addEventListener('click', showPlaylist());
