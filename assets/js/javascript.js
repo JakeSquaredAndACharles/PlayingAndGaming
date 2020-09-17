@@ -1,6 +1,6 @@
+var playlistEl = document.querySelector('#playlist-container');
 
-
-var displayPlaylist = function (data) {
+var showPlaylist = function (data) {
 
 
     if (id === "chilltendo") {
