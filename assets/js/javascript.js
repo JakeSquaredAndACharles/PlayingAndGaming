@@ -24,8 +24,8 @@ var showPlaylist5 = function() {
 };
 
 
-document.getElementById('chilltendo').addEventListener('click', showPlaylist1());
-document.getElementById('synthwave').addEventListener('click', showPlaylist2());
-document.getElementById('superLofi').addEventListener('click', showPlaylist3());
-document.getElementById('pokeChill').addEventListener('click', showPlaylist4());
-document.getElementById('undertale').addEventListener('click', showPlaylist5());
+document.getElementById('chilltendo').addEventListener('click', showPlaylist1);
+document.getElementById('synthwave').addEventListener('click', showPlaylist2);
+document.getElementById('superLofi').addEventListener('click', showPlaylist3);
+document.getElementById('pokeChill').addEventListener('click', showPlaylist4);
+document.getElementById('undertale').addEventListener('click', showPlaylist5);
