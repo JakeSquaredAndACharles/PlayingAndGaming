@@ -1,9 +1,4 @@
 var playlistEl = document.querySelector('#playlist-container');
-var chilltendoEl = document.querySelector('#chilltendo');
-var synthwaveEl = document.querySelector('#synthwave');
-var superLofiEl = document.querySelector('#superLofi');
-var pokeChillEl = document.querySelector('#pokeChill');
-var undertaleEl = document.querySelector('#undertale');
 
 var showPlaylist1 = function() {
     playlistEl.innerHTML = '<iframe class="spotify" src="https://open.spotify.com/album/4ug4ktSFhisTatqDShUdAR" frameborder="0" id="music-player" allowtransparency="true" allow="encrypted-media"></iframe>';
