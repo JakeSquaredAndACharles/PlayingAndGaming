@@ -1,4 +1,9 @@
 var playlistEl = document.querySelector('#playlist-container');
+var chilltendoEl = document.querySelector('#chilltendo');
+var synthwaveEl = document.querySelector('#synthwave');
+var superLofiEl = document.querySelector('#superLofi');
+var pokeChillEl = document.querySelector('#pokeChill');
+var undertaleEl = document.querySelector('#undertale');
 
 var showPlaylist1 = function() {
     playlistEl.innerHTML = '<iframe class="spotify" src="https://open.spotify.com/album/4ug4ktSFhisTatqDShUdAR" frameborder="0" id="music-player" allowtransparency="true" allow="encrypted-media"></iframe>';
@@ -24,8 +29,8 @@ var showPlaylist5 = function() {
 };
 
 
-document.getElementById('chilltendo').addEventListener('click', showPlaylist1);
-document.getElementById('synthwave').addEventListener('click', showPlaylist2);
-document.getElementById('superLofi').addEventListener('click', showPlaylist3);
-document.getElementById('pokeChill').addEventListener('click', showPlaylist4);
-document.getElementById('undertale').addEventListener('click', showPlaylist5);
+document.chilltendoEl.addEventListener('click', showPlaylist1);
+document.synthwaveEl.addEventListener('click', showPlaylist2);
+document.superLofiEl.addEventListener('click', showPlaylist3);
+document.pokeChillEl.addEventListener('click', showPlaylist4);
+document.undertaleEl.addEventListener('click', showPlaylist5);
