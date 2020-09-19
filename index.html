@@ -24,7 +24,7 @@
     <!-- Undertale Remixed -->
     <button type="button" id="undertale">Undertale Remix</button>
 
-
+    <!-- Phaser 3 Game Build -->
     <script type="text/javascript">
 
     var config = {
@@ -49,6 +49,18 @@
     var score = 0;
     var scoreText;
 
+    function centerCameraOn(cam, x, y) {
+        // figure out what the "center" of the camera is based
+        // on its width/height
+        var cx = cam.width / 2;
+        var cy = cam.height / 2;
+
+        // now update the camera scrollX/Y based on offset from
+        // it's computed center
+        cam.scrollX = -cx + x;
+        cam.scrollY = -cy + y;
+    }
+
 
     function preload ()
     {
@@ -63,6 +75,8 @@
 
     function create ()
     {
+        centerCameraOn(this.cameras.main, 0, 0)
+
         this.add.image(400, 300, 'background');
         
         platforms = this.physics.add.staticGroup();
@@ -199,6 +213,7 @@
     }
 
     </script>
+    <!-- Link to Javascript file -->
     <script src="assets/js/javascript.js"></script>
     <button onClick="window.location.reload();">Restart</button>
 
