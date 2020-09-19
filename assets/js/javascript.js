@@ -29,8 +29,8 @@ var showPlaylist5 = function() {
 };
 
 
-document.chilltendoEl.addEventListener('click', showPlaylist1);
-document.synthwaveEl.addEventListener('click', showPlaylist2);
-document.superLofiEl.addEventListener('click', showPlaylist3);
-document.pokeChillEl.addEventListener('click', showPlaylist4);
-document.undertaleEl.addEventListener('click', showPlaylist5);
+chilltendoEl.addEventListener('click', showPlaylist1);
+synthwaveEl.addEventListener('click', showPlaylist2);
+superLofiEl.addEventListener('click', showPlaylist3);
+pokeChillEl.addEventListener('click', showPlaylist4);
+undertaleEl.addEventListener('click', showPlaylist5);
