@@ -6,7 +6,7 @@ var pokeChillEl = document.querySelector('#pokeChill');
 var undertaleEl = document.querySelector('#undertale');
 
 var showPlaylist1 = function() {
-    playlistEl.innerHTML = '<iframe class="spotify" src="https://open.spotify.com/album/4ug4ktSFhisTatqDShUdAR" frameborder="0" id="music-player" allowtransparency="true" allow="encrypted-media"></iframe>';
+    playlistEl.innerHTML = '<iframe class="spotify" src="https://open.spotify.com/album/4ug4ktSFhisTatqDShUdAR?si=sasnUWIdRLCm_Dk4FUqy2A" frameborder="0" id="music-player" allowtransparency="true" allow="encrypted-media"></iframe>';
     console.log("chill brah");
 };
 
