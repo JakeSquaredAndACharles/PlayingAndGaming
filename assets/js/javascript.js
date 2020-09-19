@@ -7,25 +7,24 @@ var undertaleEl = document.querySelector('#undertale');
 
 var showPlaylist1 = function() {
     playlistEl.innerHTML = '<iframe src="https://open.spotify.com/embed/album/4ug4ktSFhisTatqDShUdAR" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
-    console.log("chill brah");
+    
 };
 
 var showPlaylist2 = function() {
-    playlistEl.innerHTML = '<iframe class="spotify" src="https://open.spotify.com/album/4TeZZfbu3rbifAjwiAAEq8" frameborder="0" id="music-player" allowtransparency="true" allow="encrypted-media"></iframe>';
-    console.log("synthy");
+    playlistEl.innerHTML = '<iframe src="https://open.spotify.com/embed/album/4TeZZfbu3rbifAjwiAAEq8" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+    
 };
 
 var showPlaylist3 = function() {
-    playlistEl.innerHTML = '<iframe class="spotify" src="https://open.spotify.com/album/3PeWDrXlXk9utHaK2CpEgT" frameborder="0" id="music-player" allowtransparency="true" allow="encrypted-media"></iframe>';
-    console.log("lobrah");
+    playlistEl.innerHTML = '<iframe src="https://open.spotify.com/embed/album/3PeWDrXlXk9utHaK2CpEgT" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+    
 };
 var showPlaylist4 = function() {
-    playlistEl.innerHTML = '<iframe class="spotify" src="https://open.spotify.com/album/4lBMa9JEuCSIs3NkPEIwvN" frameborder="0" id="music-player" allowtransparency="true" allow="encrypted-media"></iframe>';
-    console.log("poke man");
+    playlistEl.innerHTML = '<iframe src="https://open.spotify.com/embed/album/4lBMa9JEuCSIs3NkPEIwvN" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
+    
 };
 var showPlaylist5 = function() {
-    playlistEl.innerHTML = '<iframe class="spotify" src="https://open.spotify.com/album/4eSyiMMYG6MRQ6pWkuuDgZ" frameborder="0" id="music-player" allowtransparency="true" allow="encrypted-media"></iframe>';
-        console.log("whats under this tale?");
+    playlistEl.innerHTML = '<iframe src="https://open.spotify.com/embed/album/4eSyiMMYG6MRQ6pWkuuDgZ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>';
 };
 
 
