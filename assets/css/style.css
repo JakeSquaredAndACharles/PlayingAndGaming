@@ -1,3 +1,12 @@
-body {
-    background-color: black;
+
+html {
+    background-image: url("../AdobeStock_329576340.jpeg");
+    background-size: cover;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    height: 100%;
 }
