@@ -4,13 +4,32 @@
     <meta charset="UTF-8" />
     <title>Super Jumpy Jump Man</title>
     <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
-      <!-- Phaser 3 Game Build -->
-    <div class="row col s12" id="phaserGame">
-        <div class="col s12 m6 l6">
+    <div class="columns">
+        <div class="column">
+
+            <div class="spotify-wrapper">
+                <div id="playlist-container"></div>
+            </div>
+
+            <div id="playlistButtons">
+                <!-- Chilltendo -->
+                <button type="button" id="chilltendo">Chilltendo</button>
+                <!-- Legend of Synthwave -->
+                <button type="button" id="synthwave">Legend of Synthwave</button>
+                <!-- Super Lofi World -->
+                <button type="button" id="superLofi">Super Lofi World</button>
+                <!-- Poke & Chill -->
+                <button type="button" id="pokeChill">Poke & Chill</button>
+                <!-- Undertale Remixed -->
+                <button type="button" id="undertale">Undertale Remix</button>
+            </div>
+        </div>
+        <div class="column">
             <script type="text/javascript">
 
                 var config = {
@@ -185,25 +204,10 @@
             
             </script>
         </div>
-    </div>
-    
-    <div class="row col s12">
-        <div class="spotify-wrapper">
-          <div class="col s12 m6 l6" id="playlist-container"></div>
+        <div class="column">
+          Weather Column
         </div>
-        <div id="playlistButtons">
-            <!-- Chilltendo -->
-            <button type="button" id="chilltendo">Chilltendo</button>
-            <!-- Legend of Synthwave -->
-            <button type="button" id="synthwave">Legend of Synthwave</button>
-            <!-- Super Lofi World -->
-            <button type="button" id="superLofi">Super Lofi World</button>
-            <!-- Poke & Chill -->
-            <button type="button" id="pokeChill">Poke & Chill</button>
-            <!-- Undertale Remixed -->
-            <button type="button" id="undertale">Undertale Remix</button>
-        </div>
-    </div>
+      </div>
 
     <!-- Link to Javascript file -->
     <script src="assets/js/javascript.js"></script>
