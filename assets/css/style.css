@@ -1,3 +1,7 @@
 body {
     background-color: black;
 }
+
+.section {
+    height: 100%;
+}
