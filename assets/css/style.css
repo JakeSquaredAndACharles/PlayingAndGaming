@@ -1,5 +1,6 @@
 body {
     background-image: url("../AdobeStock_329576340.jpeg");
+    background-size: cover;
 }
 
 .section {
