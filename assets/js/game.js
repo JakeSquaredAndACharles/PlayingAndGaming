@@ -14,12 +14,9 @@ var config = {
         create: create,
         update: update
     },
-    scale: {
-        parent: 'yourgamediv',
-        mode: Phaser.Scale.FIT,
-        width: 800,
-        height: 600
-    }
+    dom: {
+        createContainer: true
+    },
 };
 
 var game = new Phaser.Game(config);
