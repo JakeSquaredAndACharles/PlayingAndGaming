@@ -13,7 +13,8 @@ var config = {
     scene: {
         preload: preload,
         create: create,
-        update: update
+        update: update,
+        render: render
     },
     dom: {
         createContainer: true
@@ -109,6 +110,10 @@ function create ()
 
     scoreText = this.add.text(16, 16, 'score: 0', {fontSize: '32px', fill: '#000'});
 
+    game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+
+    game.input.onDown.add(gofull, this);
+
 }
 
 function update ()
@@ -137,6 +142,19 @@ function update ()
     {
         player.setVelocityY(-425);
     } 
+}
+
+function gofull () {
+    if (game.scale.isFullScreen) {
+        game.scale.stopFullScreen();
+    }
+    else {
+        game.scale.startFullScreen(false);
+    }
+}
+
+function render () {
+    game.debug.inputInfo(32,32);
 }
 
 function collectPrism (player, prism)
