@@ -10,14 +10,18 @@
 </head>
 <body>
 
+    <!-- Styled Using Bulma -->
     <div class="columns">
 
+        <!-- Playlist Section Start -->
         <div class="column is-one-fifth">
 
+            <!-- Container for Spotify Playlist to Fill when a playlist button is selected.  -->
             <div class="spotify-wrapper">
                 <div id="playlist-container"></div>
             </div>
 
+            <!-- Creates and styles buttons for the user to interact with to choose which playlist they would like to listen to -->
             <div id="playlistButtons">
                 <!-- Chilltendo -->
                 <button class="button is-rounded is-primary is-fullwidth is-outlined" type="button" id="chilltendo">Chilltendo</button>
@@ -31,15 +35,20 @@
                 <button class="button is-rounded is-primary is-fullwidth is-outlined" type="button" id="undertale">Undertale Remix</button>
             </div>
         </div>
+        <!-- Playlist Section End -->
 
+        <!-- Main Game Section Start -->
         <div class="column section is-three-fifths" id="phaserGame">
             <script src="assets/js/game.js"></script>
         </div>
+        <!-- Main Game Section End -->
 
+        <!-- Restart Button Section Start -->
         <div class="column is-one-fifth">
             <!-- Restart Button -->
             <button class="button is-rounded is-fullwidth is-info is-outlined" onClick="window.location.reload();">Restart</button>
         </div>
+        <!-- Restart Button Section End -->
 
     </div>
 

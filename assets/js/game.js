@@ -1,4 +1,7 @@
+
+// Creates a variable with the settings for the game. 
 var config = {
+
     type: Phaser.AUTO,
     width: 800,
     height: 600,
@@ -20,10 +23,12 @@ var config = {
     },
 };
 
+// Creates a new game using the properties from the config variable. 
 var game = new Phaser.Game(config);
 var score = 0;
 var scoreText;
 
+// Preloads assets to be used in game
 function preload ()
 {
     this.load.image('background', 'assets/colored_grass.png');
@@ -35,6 +40,7 @@ function preload ()
     cursors = this.input.keyboard.createCursorKeys();
 }
 
+// Creates platforms, adds controls, adds colliders, essentially "creates" the game after assets have been preloaded
 function create ()
 {
     this.add.image(400, 300, 'background');
@@ -111,6 +117,8 @@ function create ()
 
 }
 
+// Checks for different states and updates what you see on screen accordingly. Mostly used to determine what your sprite should be doing based on user input. 
+// Updates any moving objects based on user input, or preprogrammed action.
 function update ()
 {
     
@@ -139,6 +147,7 @@ function update ()
     } 
 }
 
+// Function to allow user to collect the stars
 function collectPrism (player, prism)
 {
     prism.disableBody(true, true);
@@ -164,6 +173,7 @@ function collectPrism (player, prism)
     }
 }
 
+// Function to tell the program what to do when the player gets hit. 
 function hitBomb (player, bomb)
 {
     this.physics.pause();
