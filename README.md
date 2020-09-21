@@ -12,4 +12,4 @@ This game uses two server-side API's which are spotify and Phaser that gives the
 
 We made this game by using Phaser, our CSS framework Bulma, a lot of Javascript and Spotify for our second API. The game is played by using the arrows on the keyboard to move left, right, and up to jump to collect all the stars.
 
-
+![image](https://user-images.githubusercontent.com/68720944/93726786-1fb62e80-fb75-11ea-86fb-852c3b633c62.png)
